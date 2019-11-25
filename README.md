@@ -169,7 +169,7 @@ differences between your computer's version of the branch and GitHub's.
 </p>
 
 4. Fill out the PR, following [these guidelines](
-https://github.com/CityofToronto/bdit_git_onboarding/pull/1).
+https://github.com/CityofToronto/bdit_git_onboarding/pull/2).
 
 <p align="center">
 <img src="images/pr4.png" alt="Fill out pull request" width="75%"/>
