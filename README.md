@@ -124,21 +124,37 @@ username to it.
 <img src="images/branch2.png" alt="Add your username to Roster.md" width="75%"/>
 </p>
 
-4. Save your changes to a new commit.  First tell Git to flag all your
-changes to be saved with `git add -A`.  Then save these changes to a snapshot
-using `git commit -m "{YOUR COMMIT MESSAGE"}`.  Make sure your commit message
-is meaningful - see the Notion.so page for best practices.
+4. Check the status of your branch with `git status`.  That will show
+the branch you're on, and any unsaved changes.
 
-Steps 5 and 6 are unnecessary to making a commit.  They are here to illustrate
+<p align="center">
+<img src="images/branch3.png" alt="Git status with unsaved changes" width="75%"/>
+</p>
+
+5. Save your changes to a new commit.  First tell Git to flag all your
+changes to be saved with `git add -A`.  If you run `git status` afterward,
+you'll see that the unsaved changes have now been "staged", meaning they'll be
+included in the next commit.
+
+<p align="center">
+<img src="images/branch4.png" alt="Git status with staged changes" width="75%"/>
+</p>
+
+6. Now, create a new commit using `git commit -m "{YOUR COMMIT MESSAGE"}`.
+Make sure your commit message is meaningful - see the Notion.so page for best
+practices.  Once you've committed, run `git status` again to check that there
+are no more unsaved changes.
+
+Steps 7 and 8 are unnecessary to making a commit.  They are here to illustrate
 how you can check your work after committing.
 
-5. Check your changes using `git diff master`, which compares the current
+7. Check your changes using `git diff master`, which compares the current
 working directory to the most recent commit of `master`.  Coloured lines
 indicate differences between the two - red lines are from `master` and
 green lines from the current working directory.  White lines are the same in
 both branches. To quit, press `q`.
 
-6. Check your commit messages using `git log`, which brings up the history of
+8. Check your commit messages using `git log`, which brings up the history of
 commits to your branch (and any parent branches).  To quit, press `q`.
 
 ## Exercise 3 - push your changes to GitHub, and create a pull request (PR)
@@ -204,13 +220,7 @@ this, push the "Merge pull request" button.
 `git pull` tells Git to update a branch on your computer using the repo on
 GitHub.  In this case, it's updating branch `master`.
 
-2. You can check the status of your branch with `git status`.  That will show
-the branch you're on, and if there are any commits that need to be pushed to
-GitHub.  (Note that to check if any commits need to be pulled *from* GitHub,
-you'll need to use `git fetch --all` to check GitHub for updates, then
-`git status`, as Git does not automatically sync with GitHub.)
-
-3. Switch back to the master branch using `git checkout master` (do not add
+2. Switch back to the master branch using `git checkout master` (do not add
 `-b`, since this branch already exists).  You can now delete `{YOUR BRANCH
 NAME}` using `git branch -D {YOUR BRANCH NAME}`.
 
