@@ -99,7 +99,8 @@ repo web address to your clipboard.
 address on your clipboard.
 
 4. Go to the `bdit_git_onboarding` folder using `cd bdit_git_onboarding`.  You
-should see the contents of the repo.
+should see the contents of the repo when you use `ls` (`dir` on Windows
+systems).
 
 ## Exercise 2 - create a new branch, and a new commit within it
 
