@@ -94,12 +94,12 @@ repo web address to your clipboard.
 <img src="images/clone2.png" alt="Clone with HTTPS" width="50%" />
 </p>
 
-3. On the command line, navigate to the folder you wish to download the repo. 
-Then, use `git clone {HTTP ADDRESS}`, where `{HTTP ADDRESS}` is the
+3. On the command line, go to the folder you wish to download the repo using
+`cd`.  Then, use `git clone {HTTP ADDRESS}`, where `{HTTP ADDRESS}` is the
 address on your clipboard.
 
-4. Navigate to the `bdit_git_onboarding` folder.  You should see the contents
-of the repo.
+4. Go to the `bdit_git_onboarding` folder using `cd bdit_git_onboarding`.  You
+should see the contents of the repo.
 
 ## Exercise 2 - create a new branch, and a new commit within it
 
